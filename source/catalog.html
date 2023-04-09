@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>HTML Academy: Седона</title>
+    </head>
+    <body>
+        <header class="header">
+            <a class="header__logo" href="#">
+                <img src="img/logo.svg" alt="logo Sedona" width="185" height="96">
+            </a>
+            <nav class="header__nav nav">
+                <ul class="nav__list" id="nav">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="catalog.html" class="nav__link--active">Фото и видео</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="form.html" class="nav__link">Форма Отзыва</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://htmlacademy.ru" class="nav__link">Html Academy</a>
+                    </li>
+                </ul>
+                <button class="nav__button menu" id="menu" type="button">
+                    <span class="visually-hidden">Открыть меню/закрыть меню</span>
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1 class="visually-hidden">
+                    Sedona
+                </h1>
+                <img src="img/sedona.svg" alt="mountains of Sedona" width="230" height="40">
+            </section>
+
+            <section class="gallery">
+                <h2 class="gallery__title">
+                    Фото и видео
+                </h2>
+                <p class="gallery__text">
+                    Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+                </p>
+                <ul class="gallery__list">
+                    <li class="gallery__item gallery-card">
+                        <img class="gallery-card__img" alt="просторы" src="img/mobile/photo-1-mobile.jpg" width="280" height="280">
+                        <div class="gallery-card__content">
+                            <h3 class="gallery-card__subtitle">
+                                неродные просторы
+                            </h3>
+                            <span class="gallery-card__author">Автор фото: Борис</span>
+                            <button type="button" class="gallery-card__button gallery-card-button">
+                                1350
+                                <span class="visually-hidden">Количество Лайков</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="gallery__item gallery-card">
+                        <img class="gallery-card__img" alt="Местная растительность" src="img/mobile/photo-2-mobile.jpg" width="280" height="280">
+                        <div class="gallery-card__content">
+                            <h3 class="gallery-card__subtitle">
+                                Местная растительность
+                            </h3>
+                            <span class="gallery-card__author">Автор фото: Сергей</span>
+                            <button type="button" class="gallery-card__button gallery-card-button">
+                                143
+                                <span class="visually-hidden">Количество Лайков</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="gallery__item gallery-card">
+                        <img class="gallery-card__img"  alt="Дорога" src="img/mobile/photo-3-mobile.jpg" width="280" height="280">
+                        <div class="gallery-card__content">
+                            <h3 class="gallery-card__subtitle">
+                                Дорога на север
+                            </h3>
+                            <span class="gallery-card__author">Автор фото: Петр</span>
+                            <button class="gallery-card__button gallery-card-button" type="button">
+                                96
+                                <span class="visually-hidden">Количество Лайков</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="gallery__card gallery-card">
+                        <img class="gallery-card__img" src="img/mobile/photo-4.jpg" alt="просторы" width="280" height="280">
+                        <div class="gallery-card__content">
+                            <h3 class="gallery-card__subtitle">
+                                Мост дьявола
+                            </h3>
+                            <span class="gallery-card__author">Автор фото: Антон</span>
+                            <button class="gallery-card__button gallery-card-button" type="button">
+                                254
+                                <span class="visually-hidden">Количество Лайков</span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="gallery__presentation gallery-presentation">
+                    <p class="gallery-presentation__text">
+                        Все еще сомневаетесь?
+                    </p>
+                    <p class="gallery-presentation__chit">
+                        Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+                    </p>
+                    <button class="gallery-presentation__button-play" type="button">
+                        <span class="visually-hidden">Воспроизвести Видео</span>
+                        <img class="gallery-presentation__video-img" src="img/mobile/video-mobile.jpg" width="280" height="177" alt="video">
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <a href="/" class="footer__link">#visitSEDONA</a>
+            <ul class="footer__socials footer-socials">
+                <li class="footer-socials__item">
+                    <a class="footer-socials__link" href="#">
+                        <span class="visually-hidden">ВКонтакте</span>
+                    </a>
+                </li>
+                <li class="footer-socials__item">
+                    <a class="footer-socials__link" href="#">
+                        <span class="visually-hidden">Телеграм</span>
+                    </a>
+                </li>
+                <li class="footer-socials__item">
+                    <a class="footer-socials__link" href="#">
+                        <span class="visually-hidden">Youtube</span>
+                    </a>
+                </li>
+            </ul>
+            <a class="footer__copyright" href="https://htmlacademy.ru">
+                Разработано
+                <span class="visually-hidden">HTML ACADEMY</span>
+                <img class="footer__img" src="img/htmlacademy.svg" alt="Html Academy" width="27" height="34">
+            </a>
+        </footer>
+    </body>
+</html>
