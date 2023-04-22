@@ -1,0 +1,140 @@
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: $minwidth;
+  position: relative;
+  width: 100%;
+  color: $text-clr;
+  font-size: 14px;
+}
+
+body {
+  font-size: 100%;
+  line-height: 150%;
+  background: #ffffff;
+  font-family: $fontfamily;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 144%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+fieldset {
+  appearance: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  outline: transparent;
+}
+
+a {
+  cursor: pointer;
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+//</ОБЩИЕ КЛАССЫ>===============================================================================================
+.landing-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  padding: 0 18px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 144%;
+  color: $dark-clr;
+  text-transform: uppercase;
+  margin: 0;
+
+  &--light {
+    color: $light-clr;
+  }
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 150%;
+  margin: 0;
+
+  &--light {
+    color: $light-clr;
+  }
+}

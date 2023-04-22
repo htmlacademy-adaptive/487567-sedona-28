@@ -1,0 +1,12 @@
+.advantages__list {
+  @include reset-list;
+}
+
+.advantages__item {
+  background-color: $secondary-clr;
+}
+
+.advantages__img {
+  width: 100%;
+  height: auto;
+}

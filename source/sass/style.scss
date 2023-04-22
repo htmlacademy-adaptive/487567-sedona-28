@@ -1,1 +1,24 @@
-// Начните писать стили здесь
+@import "variables.scss";
+@import "mixins.scss";
+@import "default.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/toggle-button";
+@import "blocks/hero.scss";
+@import "blocks/headline.scss";
+@import "blocks/advantages.scss";
+@import "blocks/card.scss";
+@import "blocks/attractions.scss";
+@import "blocks/hotels.scss";
+@import "blocks/button.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+@import "blocks/socials.scss";
+@import "blocks/gallery.scss";
+@import "blocks/gallery-card.scss";
+@import "blocks/card-button.scss";
+@import "blocks/presentation.scss";
+@import "blocks/form.scss";
+@import "blocks/form-group.scss";
+@import "blocks/input.scss";
+@import "blocks/label.scss";

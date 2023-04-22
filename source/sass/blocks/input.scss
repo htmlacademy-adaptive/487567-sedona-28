@@ -1,0 +1,11 @@
+.input {
+  display: block;
+  height: 58px;
+  padding: 16px;
+  background-color: #f2f2f2;
+  font-size: 18px;
+
+  &--has-icon {
+    padding: 16px 74px 16px 16px;
+  }
+}

@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 33px;
+}
+
+.footer__link {
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+
+.footer__socials {
+  @include reset-list;
+
+  margin-bottom: 30px;
+}
+
+.footer__copyright {
+  color: $dark-clr;
+}
+
+.footer__img {
+  margin-left: 12px;
+}

@@ -1,0 +1,108 @@
+.form-group__list {
+  @include reset-list;
+
+  margin-top: 40px;
+}
+
+.form-group__item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.form-group__input {
+  width: 100%;
+
+  &--radio[type="radio"]:checked ~ .form-group__label {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 23px;
+      transform: translate(-50%, -50%);
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $text-clr;
+    }
+  }
+
+  &--checkbox[type="checkbox"]:checked ~ .form-group__label {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 24px;
+      transform: translate(-50%, -50%);
+      width: 22px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $text-clr;
+      mask-image: url("../../img/form/tick.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 22px 16px;
+    }
+  }
+}
+
+.form-group__label {
+  display: block;
+
+  &--radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+
+    &::before {
+      content: "";
+      width: 46px;
+      height: 46px;
+      background-color: $form-bg-clr;
+      display: block;
+      border-radius: 50%;
+      margin-right: 16px;
+    }
+  }
+
+  &--checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 4px;
+
+    &::before {
+      content: "";
+      width: 46px;
+      height: 46px;
+      background-color: $form-bg-clr;
+      display: block;
+      margin-right: 16px;
+    }
+  }
+}
+
+.form-group__legend {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  float: left;
+}
+
+.form-group__textarea {
+  padding: 16px;
+  background: $form-bg-clr;
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

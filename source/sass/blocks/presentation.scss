@@ -1,0 +1,26 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 17px 20px 0;
+}
+
+.presentation__title {
+  margin-bottom: 30px;
+}
+
+.presentation__chit {
+  max-width: 270px;
+  margin-bottom: 38px;
+}
+
+.presentation__video-img {
+  width: 100%;
+  height: auto;
+}
+
+.presentation__button-play {
+  border: none;
+  padding: 0;
+}
