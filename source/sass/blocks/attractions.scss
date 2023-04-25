@@ -1,0 +1,33 @@
+.attractions {
+  padding-top: 23px;
+  padding-bottom: 46px;
+  list-style: none;
+}
+
+.attractions__item {
+  max-width: 300px;
+  padding: 8px 0 0 47px;
+  background-position: top 22px left;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  &--housing {
+    background-image: url("../../img/advantages/home.svg");
+  }
+
+  &--food {
+    background-image: url("../../img/advantages/burger.svg");
+  }
+
+  &--souvenirs {
+    background-image: url("../../img/advantages/gift.svg");
+  }
+}
+
+.attractions__title {
+  margin-bottom: 16px;
+}

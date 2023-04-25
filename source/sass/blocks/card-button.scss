@@ -1,0 +1,18 @@
+.card-button {
+  position: relative;
+  background-color: inherit;
+  padding-left: 37px;
+
+  &::before {
+    content: "";
+    background-image: url("../../img/card/like-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 23px;
+    height: 21px;
+  }
+}

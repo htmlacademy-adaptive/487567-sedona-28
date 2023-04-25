@@ -1,0 +1,9 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery__list {
+  @include reset-list;
+}

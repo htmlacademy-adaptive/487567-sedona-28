@@ -1,0 +1,27 @@
+.gallery-card {
+  padding: 25px 20px 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.gallery-card__img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-card__content {
+  padding: 15px 0 25px;
+}
+
+.gallery-card__author {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: inherit;
+  color: $text-clr;
+}
+
+.gallery-card__button {
+  display: block;
+  margin-top: 10px;
+  border: none;
+}
