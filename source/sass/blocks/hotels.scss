@@ -2,14 +2,30 @@
   padding-top: 40px;
   padding-bottom: 50px;
   text-align: center;
+
+
+  @include md-width {
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
 }
 
 .hotels__title {
   margin-bottom: 15px;
   font-size: 21px;
+
+  @include md-width {
+    font-size: 30px;
+  }
+}
+
+.hotels__text {
+  max-width: 435px;
+  margin: 0 auto;
 }
 
 .hotels__button {
   width: 100%;
+  max-width: 458px;
   margin-top: 32px;
 }

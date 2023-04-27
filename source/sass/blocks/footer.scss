@@ -4,17 +4,31 @@
   justify-content: center;
   flex-direction: column;
   padding: 33px;
+
+  @include md-width {
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 36px;
+  }
 }
 
 .footer__link {
   font-size: 21px;
   margin-bottom: 30px;
+
+  @include md-width {
+    margin-bottom: 0;
+  }
 }
 
 .footer__socials {
   @include reset-list;
 
   margin-bottom: 30px;
+
+  @include md-width {
+    margin-bottom: 0;
+  }
 }
 
 .footer__copyright {

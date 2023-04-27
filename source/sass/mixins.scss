@@ -3,3 +3,24 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin xl-width {
+  @media all and (min-width: 1699px) {
+    @content;
+  }
+}
+
+@mixin lg-width {
+  @media all and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin md-width {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
+
+
+

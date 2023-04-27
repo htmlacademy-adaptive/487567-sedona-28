@@ -3,16 +3,32 @@
   background-color: inherit;
   padding-left: 37px;
 
+  @include lg-width {
+    background-color: initial;
+    color: $light-clr;
+
+  }
+
   &::before {
     content: "";
-    background-image: url("../../img/card/like-icon.svg");
+    mask-image: url("../../img/card/like-icon.svg");
+    -webkit-mask-image: url("../../img/card/like-icon.svg");
+    background-color: $dark-clr;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0.3;
 
     width: 23px;
     height: 21px;
+
+    @include lg-width {
+      mask-image: url("../../img/card/like-icon.svg");
+      -webkit-mask-image: url("../../img/card/like-icon.svg");
+      background-color: $light-clr;
+      opacity: 1;
+    }
   }
 }

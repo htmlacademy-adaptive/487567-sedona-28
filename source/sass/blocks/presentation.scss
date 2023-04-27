@@ -3,7 +3,16 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 17px 20px 0;
+  width: 100%;
+  padding-top: 17px;
+
+  @include md-width {
+    padding: 60px 0 40px;
+  }
+
+  @include lg-width {
+    padding: 60px 200px 80px;
+  }
 }
 
 .presentation__title {
@@ -13,6 +22,11 @@
 .presentation__chit {
   max-width: 270px;
   margin-bottom: 38px;
+
+  @include md-width {
+    max-width: 455px;
+    margin-bottom: 70px;
+  }
 }
 
 .presentation__video-img {
@@ -21,6 +35,22 @@
 }
 
 .presentation__button-play {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
   border: none;
   padding: 0;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 54px;
+    height: 48px;
+    background-image: url("../../img/gallery/play-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 54px 48px;
+  }
 }

@@ -2,32 +2,71 @@
   padding-top: 23px;
   padding-bottom: 46px;
   list-style: none;
+
+  @include md-width {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
 }
 
 .attractions__item {
   max-width: 300px;
   padding: 8px 0 0 47px;
-  background-position: top 22px left;
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: 40px 40px;
 
+  @include md-width {
+    max-width: 100%;
+    padding: 166px 30px 60px;
+    background-position: top 66px center;
+  }
+
   &:not(:last-child) {
     margin-bottom: 25px;
+
+    @include md-width {
+      margin-bottom: 0;
+    }
   }
 
   &--housing {
     background-image: url("../../img/advantages/home.svg");
+
+    @include md-width {
+      background-size: 77px 72px;
+    }
   }
 
   &--food {
     background-image: url("../../img/advantages/burger.svg");
+
+    @include md-width {
+      background-size: 80px 68px;
+      background-position: top 72px center;
+    }
   }
 
   &--souvenirs {
     background-image: url("../../img/advantages/gift.svg");
+
+    @include md-width {
+      background-size: 67px 75px;
+    }
   }
 }
 
 .attractions__title {
   margin-bottom: 16px;
 }
+
+.attractions__title,
+.attractions__text {
+  @include md-width {
+    text-align: center;
+  }
+}
+

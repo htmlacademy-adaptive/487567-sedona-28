@@ -8,4 +8,8 @@
   &--has-icon {
     padding: 16px 74px 16px 16px;
   }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
