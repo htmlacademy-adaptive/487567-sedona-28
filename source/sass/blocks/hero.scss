@@ -1,7 +1,7 @@
 .hero {
   background-image: url("../../img/hero/decor.svg"), url("../../img/hero/back-mobile.jpg");
   background-size: auto, cover;
-  background-position: center bottom, center top 28%;
+  background-position: center bottom -1px, center top 28%;
   background-repeat: no-repeat, no-repeat;
   padding: 70px 18px 55px;
   display: flex;
@@ -10,13 +10,62 @@
   flex-direction: column;
   color: $light-clr;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/hero/intro-triangle.svg"), url("../../img/hero/back-mobile2x.jpg");
+  }
+
+  @include md-width {
+    padding: 57px 30px 60px;
+    background-image: url("../../img/hero/intro-triangle.svg"), url("../../img/hero/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/hero/intro-triangle.svg"), url("../../img/hero/back-tablet2x.jpg");
+    }
+  }
+
+  @include lg-width {
+    background-size: contain, cover;
+    background-image: url("../../img/hero/intro-triangle.svg"), url("../../img/hero/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/hero/intro-triangle.svg"), url("../../img/hero/back-desktop2x.jpg");
+    }
+  }
+
   &--alt {
-    background-position: center bottom;
+    background-position: center bottom -1px, center bottom;
     padding: 32px 18px 37px;
+
+    @include md-width {
+      padding: 87px 30px 90px;
+      background-position: center bottom -1px, center bottom;
+    }
+
+    @include lg-width {
+      padding: 90px 30px 95px;
+      background-position: center bottom -1px, center bottom;
+    }
   }
 }
 
 .hero__img {
   display: block;
   margin: 20px 0 30px;
+
+  @include md-width {
+    width: 460px;
+    height: 350px;
+  }
+
+  &--alt {
+    @include md-width {
+      width: 457px;
+      height: 78px;
+    }
+
+    @include lg-width {
+      width: 460px;
+      height: 80px;
+    }
+  }
 }

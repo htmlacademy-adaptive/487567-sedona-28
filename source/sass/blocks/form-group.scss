@@ -1,7 +1,45 @@
+.form-group {
+  width: 100%;
+
+  &--half {
+    @include md-width {
+      width: 50%;
+    }
+  }
+
+  &--row {
+    @include md-width {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
 .form-group__list {
   @include reset-list;
 
   margin-top: 40px;
+
+  &--row {
+    @include md-width {
+      width: 100%;
+      display: inline-grid;
+      grid-template-columns: repeat(2, 280px);
+      justify-content: center;
+    }
+
+    @include lg-width {
+      display: flex;
+    }
+  }
+}
+
+.form-group__list--row > .form-group__item:not(:last-child) {
+  @include lg-width {
+    margin-right: 60px;
+  }
 }
 
 .form-group__item {
@@ -89,10 +127,53 @@
 }
 
 .form-group__legend {
+  position: relative;
   width: 100%;
   margin-bottom: 20px;
   text-align: center;
   float: left;
+
+  @include md-width {
+    margin-bottom: 30px;
+  }
+}
+
+.form-group__legend--decor {
+  &::before {
+    @include md-width {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 1px;
+      min-width: 130px;
+      width: 20%;
+      background-color: #dbdbdb;
+    }
+
+    @include lg-width {
+      min-width: 280px;
+    }
+  }
+
+  &::after {
+    @include md-width {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      height: 1px;
+      width: 20%;
+      min-width: 130px;
+      background-color: #dbdbdb;
+    }
+
+    @include lg-width {
+      min-width: 280px;
+    }
+  }
 }
 
 .form-group__textarea {
@@ -101,6 +182,12 @@
   width: 100%;
   min-height: 150px;
   resize: none;
+
+  @include lg-width {
+    display: block;
+    max-width: 79.17%;
+    margin: 0 auto;
+  }
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);

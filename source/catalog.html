@@ -14,10 +14,10 @@
             <nav class="header__nav nav">
                 <ul class="nav__list" id="nav">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link nav__link--active title title--light">Главная</a>
+                        <a href="index.html" class="nav__link title title--light">Главная</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link title title--light">Фото и видео</a>
+                        <a href="#" class="nav__link nav__link--active title title--light">Фото и видео</a>
                     </li>
                     <li class="nav__item">
                         <a href="form.html" class="nav__link title title--light">Форма Отзыва</a>
@@ -26,7 +26,7 @@
                         <a href="https://htmlacademy.ru" class="nav__link title title--light">Html Academy</a>
                     </li>
                 </ul>
-                <button class="nav__button toggle-button" id="toggle-button" type="button">
+                <button class="nav__button nav-button" id="nav-button" type="button">
                     <span class="visually-hidden">Открыть меню/закрыть меню</span>
                 </button>
             </nav>
@@ -37,28 +37,35 @@
                 <h1 class="visually-hidden">
                     Sedona
                 </h1>
-                <img class="hero__img" src="img/hero/sedona.svg" alt="mountains of Sedona" width="230" height="40">
+                <img class="hero__img hero__img--alt" src="img/hero/sedona.svg" alt="mountains of Sedona" width="230" height="40">
             </section>
 
             <section class="headline">
-                <h2 class="headline__title title">
+                <h2 class="headline__title title title--large">
                     Фото и видео
                 </h2>
                 <p class="headline__text text">
-                    Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+                    Не можете решиться на путешествие из-за курса?
+                    <span class="text-wrap">Фотографии помогут вам забыть о политике и экономике.</span>
                 </p>
             </section>
 
             <section class="gallery">
                 <h2 class="visually-hidden">Галерея фото и видео</h2>
                 <ul class="gallery__list">
-                    <li class="gallery__item gallery-card">
-                        <img class="gallery-card__img" alt="просторы" src="img/gallery/photo-1-mobile.jpg" width="280" height="280">
+                    <li class="gallery__item gallery-card gallery-card--wide">
+                        <picture class="gallery-card__picture">
+                            <source media="(min-width: 1200px)" srcset="img/gallery/photo-1-desktop.jpg 1x, img/gallery/photo-1-desktop2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="img/gallery/photo-1-tablet.jpg 1x, img/gallery/photo-1-tablet2x.jpg 2x">
+                            <img class="gallery-card__img" src="img/gallery/photo-1-mobile.jpg" srcset="img/gallery/photo-1-mobile2x.jpg 2x" width="280" height="280" alt="road on sunset">
+                        </picture>
                         <div class="gallery-card__content">
-                            <h3 class="gallery-card__subtitle title">
-                                неродные просторы
-                            </h3>
-                            <span class="gallery-card__author">Автор фото: Борис</span>
+                            <div class="gallery-card__description">
+                                <h3 class="gallery-card__subtitle">
+                                    неродные просторы
+                                </h3>
+                                <span class="gallery-card__author">Автор фото: Борис</span>
+                            </div>
                             <button type="button" class="gallery-card__button card-button">
                                 1350
                                 <span class="visually-hidden">Количество Лайков</span>
@@ -66,12 +73,18 @@
                         </div>
                     </li>
                     <li class="gallery__item gallery-card">
-                        <img class="gallery-card__img" alt="Местная растительность" src="img/gallery/photo-2-mobile2x.jpg" width="280" height="280">
+                        <picture class="gallery-card__picture">
+                            <source media="(min-width: 1200px)" srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="img/gallery/photo-2-tablet.jpg 1x, img/gallery/photo-2-tablet2x.jpg 2x">
+                            <img class="gallery-card__img" src="img/gallery/photo-2-mobile.jpg" srcset="img/gallery/photo-2-mobile2x.jpg 2x" width="280" height="280" alt="Местная растительность">
+                        </picture>
                         <div class="gallery-card__content">
-                            <h3 class="gallery-card__subtitle title">
-                                Местная растительность
-                            </h3>
-                            <span class="gallery-card__author">Автор фото: Сергей</span>
+                            <div class="gallery-card__description">
+                                <h3 class="gallery-card__subtitle">
+                                    Местная растительность
+                                </h3>
+                                <span class="gallery-card__author">Автор фото: Сергей</span>
+                            </div>
                             <button type="button" class="gallery-card__button card-button">
                                 143
                                 <span class="visually-hidden">Количество Лайков</span>
@@ -79,12 +92,18 @@
                         </div>
                     </li>
                     <li class="gallery__item gallery-card">
-                        <img class="gallery-card__img"  alt="Дорога" src="img/gallery/photo-3-mobile.jpg" width="280" height="280">
+                        <picture class="gallery-card__picture">
+                            <source media="(min-width: 1200px)" srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="img/gallery/photo-3-tablet.jpg 1x, img/gallery/photo-3-tablet2x.jpg 2x">
+                            <img class="gallery-card__img" src="img/gallery/photo-3-mobile.jpg" srcset="img/gallery/photo-3-mobile2x.jpg 2x" width="280" height="280" alt="Дорога">
+                        </picture>
                         <div class="gallery-card__content">
-                            <h3 class="gallery-card__subtitle title">
-                                Дорога на север
-                            </h3>
-                            <span class="gallery-card__author">Автор фото: Петр</span>
+                            <div class="gallery-card__description">
+                                <h3 class="gallery-card__subtitle">
+                                    Дорога на север
+                                </h3>
+                                <span class="gallery-card__author">Автор фото: Петр</span>
+                            </div>
                             <button class="gallery-card__button card-button" type="button">
                                 96
                                 <span class="visually-hidden">Количество Лайков</span>
@@ -92,12 +111,18 @@
                         </div>
                     </li>
                     <li class="gallery__card gallery-card">
-                        <img class="gallery-card__img" src="img/gallery/photo-4.jpg" alt="просторы" width="280" height="280">
+                        <picture class="gallery-card__picture">
+                            <source media="(min-width: 1200px)" srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-desktop2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="img/gallery/photo-4-tablet.jpg 1x, img/gallery/photo-4-tablet2x.jpg 2x">
+                            <img class="gallery-card__img" src="img/gallery/photo-4.jpg" srcset="img/gallery/photo-4-2x.jpg 2x" width="280" height="280" alt="просторы">
+                        </picture>
                         <div class="gallery-card__content">
-                            <h3 class="gallery-card__subtitle title">
-                                Мост дьявола
-                            </h3>
-                            <span class="gallery-card__author">Автор фото: Антон</span>
+                            <div class="gallery-card__description">
+                                <h3 class="gallery-card__subtitle">
+                                    Мост дьявола
+                                </h3>
+                                <span class="gallery-card__author">Автор фото: Антон</span>
+                            </div>
                             <button class="gallery-card__button card-button" type="button">
                                 254
                                 <span class="visually-hidden">Количество Лайков</span>
@@ -114,7 +139,11 @@
                     </p>
                     <button class="presentation__button-play" type="button">
                         <span class="visually-hidden">Воспроизвести Видео</span>
-                        <img class="presentation__video-img" src="img/gallery/video-mobile.jpg" width="280" height="177" alt="video">
+                        <picture class="presentation__picture">
+                            <source media="(min-width: 1200px)" srcset="img/gallery/video-desktop.jpg 1x, img/gallery/video-desktop2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="img/gallery/video-tablet.jpg 1x, img/gallery/video-tablet2x.jpg 2x">
+                            <img class="presentation__video-img" src="img/gallery/video-mobile.jpg" srcset="img/gallery/video-mobile2x.jpg 2x" width="280" height="177" alt="video">
+                        </picture>
                     </button>
                 </div>
             </section>
@@ -145,5 +174,7 @@
                 <img class="footer__img" src="img/footer/htmlacademy.svg" alt="Html Academy" width="27" height="34">
             </a>
         </footer>
+
+        <script src="js/main.js"></script>
     </body>
 </html>

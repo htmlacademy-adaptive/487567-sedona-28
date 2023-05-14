@@ -2,8 +2,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
+
+  @include md-width {
+    padding: 0 60px;
+  }
+
+  @include lg-width {
+    padding: 0;
+  }
 }
 
 .gallery__list {
   @include reset-list;
+  width: 100%;
+
+  @include md-width {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+  }
+
+  @include lg-width {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+  }
 }

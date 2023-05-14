@@ -1,0 +1,65 @@
+.nav-button {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 50%;
+  right: 20px;
+  border: none;
+  background: transparent;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  -webkit-tap-highlight-color: transparent;
+
+  @include md-width {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 23px;
+    height: 4px;
+    background-color: $primary-clr;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 23px;
+    height: 4px;
+    background-color: $primary-clr;
+    box-shadow: 0 9px 0 0 $primary-clr;
+  }
+
+  &--close {
+    transition: 0.3s;
+    z-index: 3;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      right: 0;
+      width: 23px;
+      height: 4px;
+      background-color: $light-clr;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      right: 0;
+      width: 23px;
+      height: 4px;
+      background-color: $light-clr;
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+  }
+}

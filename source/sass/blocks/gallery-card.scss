@@ -1,7 +1,36 @@
 .gallery-card {
-  padding: 25px 20px 0;
+  position: relative;
+  padding-top: 25px;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
+
+  @include md-width {
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  &--wide {
+    @include md-width {
+      display: grid;
+      width: 100%;
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-row-end: 2;
+      grid-column-end: 3;
+    }
+
+    @include lg-width {
+      grid-column-end: 4;
+    }
+  }
+}
+
+.gallery-card__subtitle,
+.gallery-card__button {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .gallery-card__img {
@@ -11,17 +40,51 @@
 
 .gallery-card__content {
   padding: 15px 0 25px;
+
+  @include md-width {
+    background-color: $form-bg-clr;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 20px 15px;
+  }
+
+  @include lg-width {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.gallery-card__description {
+  color: $text-clr;
+
+  @include md-width {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include lg-width {
+    color: $light-clr;
+  }
 }
 
 .gallery-card__author {
   font-size: 14px;
   font-weight: 400;
   line-height: inherit;
-  color: $text-clr;
 }
 
 .gallery-card__button {
   display: block;
   margin-top: 10px;
   border: none;
+  min-height: 25px;
+
+  @include md-width {
+    margin-top: 0;
+    min-height: 30px;
+  }
 }

@@ -8,16 +8,16 @@
     </head>
     <body>
         <header class="header">
-            <a class="header__logo" href="#">
+            <a class="header__logo" href="index.html">
                 <img src="img/header/logo.svg" alt="logo Sedona" width="185" height="96">
             </a>
             <nav class="header__nav nav">
                 <ul class="nav__list" id="nav">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link nav__link--active title title--light">Главная</a>
+                        <a href="index.html" class="nav__link title title--light">Главная</a>
                     </li>
                     <li class="nav__item">
-                        <a href="catalog.html" class="nav__link title title--light">Фото и видео</a>
+                        <a href="catalog.html" class="nav__link nav__link--active title title--light">Фото и видео</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__link title title--light">Форма Отзыва</a>
@@ -26,36 +26,38 @@
                         <a href="https://htmlacademy.ru" class="nav__link title title--light">Html Academy</a>
                     </li>
                 </ul>
-                <button class="nav__button toggle-button" id="toggle-button" type="button">
+                <button class="nav__button nav-button" id="nav-button" type="button">
                     <span class="visually-hidden">Открыть меню/закрыть меню</span>
                 </button>
             </nav>
         </header>
 
-        <main>
+        <main class="landing-wrapper">
             <section class="hero hero--alt">
                 <h1 class="visually-hidden">
                     Sedona
                 </h1>
-                <img class="hero__img" src="img/hero/sedona.svg" alt="mountains of Sedona" width="230" height="40">
+                <img class="hero__img hero__img--alt" src="img/hero/sedona.svg" alt="mountains of Sedona" width="230" height="40">
             </section>
 
             <section class="headline">
-                <h2 class="headline__title title">
+                <h2 class="headline__title title title--large">
                     Оставьте свой отзыв
                 </h2>
                 <p class="headline__text text">
-                    Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+                    Помогите нашим отелям стать лучше! оставьте отзыв о них,
+                    <span class="text-wrap">
+                        а также о посещенных вами достопримечательностях
+                    </span>
                 </p>
             </section>
 
-            <section class="form">
-                <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="form" action="https://echo.htmlacademy.ru/" method="post">
                     <h2 class="visually-hidden">
                         Форма для отзыва
                     </h2>
 
-                    <fieldset class="form__group form-group">
+                    <fieldset class="form__group form-group form-group--half">
                         <legend class="form-group__legend title">Представтесь:</legend>
                         <ul class="form-group__list" role="none">
                             <li class="form-group__item">
@@ -73,23 +75,23 @@
                         </ul>
                     </fieldset>
 
-                    <fieldset class="form__group form-group">
+                    <fieldset class="form__group form-group form-group--half">
                         <legend class="form-group__legend title">Контактная информация:</legend>
                         <ul class="form-group__list">
                             <li class="form-group__item">
                                 <label class="form-group__label text label label--input-icon label--phone" for="phone">Контактный телефон*:</label>
-                                <input class="form-group__input input input--has-icon" type="tel" id="phone" name="phone" required>
+                                <input class="form-group__input input input--has-icon" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
                             </li>
                             <li class="form-group__item">
                                 <label class="form-group__label text label label--input-icon label--email" for="e-mail">Электронная почта*:</label>
-                                <input class="form-group__input input input--has-icon" type="email" id="e-mail" name="e-mail" required>
+                                <input class="form-group__input input input--has-icon" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
                             </li>
                         </ul>
                     </fieldset>
 
-                    <fieldset class="form__group form-group">
-                        <legend class="form-group__legend title">Ваше общее впечатление:</legend>
-                        <ul class="form-group__list">
+                    <fieldset class="form__group form-group form-group--row">
+                        <legend class="form-group__legend form-group__legend--decor title">Ваше общее впечатление:</legend>
+                        <ul class="form-group__list form-group__list--row">
                             <li class="form-group__item">
                                 <input class="form-group__input form-group__input--radio visually-hidden" type="radio" id="positive" name="impression" value="positive" checked>
                                 <label class="form-group__label form-group__label--radio" for="positive">Скорее положительное</label>
@@ -105,9 +107,9 @@
                         </ul>
                     </fieldset>
 
-                    <fieldset class="form__group form-group">
-                        <legend class="form-group__legend title">Посещенные достопримечательности:</legend>
-                        <ul class="form-group__list">
+                    <fieldset class="form__group form-group form-group--row">
+                        <legend class="form-group__legend form-group__legend--decor title">Посещенные <span class="text-wrap">достопримечательности:</span></legend>
+                        <ul class="form-group__list form-group__list--row">
                             <li class="form-group__item">
                                 <input class="form-group__input form-group__input--checkbox visually-hidden" type="checkbox" id="devils-bridge" name="devils-bridge" checked>
                                 <label class="form-group__label form-group__label--checkbox" for="devils-bridge">Мост Дьявола</label>
@@ -128,16 +130,15 @@
                     </fieldset>
 
                     <fieldset class="form__group form-group">
-                        <legend class="form-group__legend title">Опишите свои эмоции:</legend>
+                        <legend class="form-group__legend form-group__legend--decor title">Опишите свои эмоции:</legend>
                         <label class="visually-hidden" for="comments">Опишите свои эмоции:</label>
                         <textarea class="form-group__textarea" id="comments" name="comments" placeholder="Опишите подробно все свои восторги"></textarea>
                     </fieldset>
                     <div class="form__submit">
                       <button class="form__button button" type="submit">Отправить отзыв</button>
-                      <span class="form__warning">* — обязательные поля</span>
+                      <span class="form__asterisk">* — обязательные поля</span>
                     </div>
                 </form>
-            </section>
         </main>
 
         <footer class="footer">
@@ -165,5 +166,7 @@
                 <img class="footer__img" src="img/footer/htmlacademy.svg" alt="Html Academy" width="27" height="34">
             </a>
         </footer>
+
+        <script src="js/main.js"></script>
     </body>
 </html>
