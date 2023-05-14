@@ -26,6 +26,7 @@
   @include lg-width {
     background-size: contain, cover;
     background-image: url("../../img/hero/intro-triangle.svg"), url("../../img/hero/back-desktop.jpg");
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/hero/intro-triangle.svg"), url("../../img/hero/back-desktop2x.jpg");
     }

@@ -1,5 +1,6 @@
 .advantages__list {
   @include reset-list;
+
   @include md-width {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -8,19 +9,6 @@
 
 .advantages__item {
   background-color: $secondary-clr;
-
-  &--prime,
-  &--prime-reverse {
-    @include md-width {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
-        &:first-child {
-          grid-column: 1/-1;
-          grid-row: 1/2;
-        }
-    }
-  }
 
   &--prime-reverse {
     @include md-width {
@@ -31,6 +19,19 @@
   &--alt {
     @include md-width {
       grid-row: 3/4;
+    }
+  }
+}
+
+.advantages__item--prime,
+.advantages__item--prime-reverse {
+  @include md-width {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &:first-child {
+      grid-column: 1/-1;
+      grid-row: 1/2;
     }
   }
 }

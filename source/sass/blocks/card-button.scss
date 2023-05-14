@@ -6,13 +6,11 @@
   @include lg-width {
     background-color: initial;
     color: $light-clr;
-
   }
 
   &::before {
     content: "";
     mask-image: url("../../img/card/like-icon.svg");
-    -webkit-mask-image: url("../../img/card/like-icon.svg");
     background-color: $dark-clr;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +24,6 @@
 
     @include lg-width {
       mask-image: url("../../img/card/like-icon.svg");
-      -webkit-mask-image: url("../../img/card/like-icon.svg");
       background-color: $light-clr;
       opacity: 1;
     }

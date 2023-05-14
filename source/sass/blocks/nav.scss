@@ -36,10 +36,8 @@
     box-shadow: none;
     width: 20%;
 
-    &:last-child {
-      &::after {
-        display: none;
-      }
+    &:last-child::after {
+      display: none;
     }
 
     &:nth-child(3) {

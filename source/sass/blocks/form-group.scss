@@ -36,11 +36,9 @@
   }
 }
 
-.form-group__list--row {
-  .form-group__item:not(:last-child) {
-    @include lg-width {
-      margin-right: 60px;
-    }
+.form-group__list--row > .form-group__item:not(:last-child) {
+  @include lg-width {
+    margin-right: 60px;
   }
 }
 
@@ -138,44 +136,43 @@
   @include md-width {
     margin-bottom: 30px;
   }
+}
 
-  &--decor {
-    &::before {
-      @include md-width {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        height: 1px;
-        min-width: 130px;
-        width: 20%;
-        background-color: #DBDBDB;
-      }
-
-      @include lg-width {
-        min-width: 280px;
-      }
+.form-group__legend--decor {
+  &::before {
+    @include md-width {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 1px;
+      min-width: 130px;
+      width: 20%;
+      background-color: #dbdbdb;
     }
 
-    &::after {
-      @include md-width {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        height: 1px;
-        width: 20%;
-        min-width: 130px;
-        background-color: #DBDBDB;
-      }
+    @include lg-width {
+      min-width: 280px;
+    }
+  }
 
-      @include lg-width {
-        min-width: 280px;
-      }
+  &::after {
+    @include md-width {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      height: 1px;
+      width: 20%;
+      min-width: 130px;
+      background-color: #dbdbdb;
     }
 
+    @include lg-width {
+      min-width: 280px;
+    }
   }
 }
 
@@ -188,7 +185,7 @@
 
   @include lg-width {
     display: block;
-    max-width: 79.175%;
+    max-width: 79.17%;
     margin: 0 auto;
   }
 

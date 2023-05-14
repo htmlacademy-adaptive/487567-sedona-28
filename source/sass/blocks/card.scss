@@ -63,18 +63,18 @@
 
   &--border {
     position: relative;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 1px;
-      background-color: $decor-clr;
+  &--border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $decor-clr;
 
-      @include md-width {
-        display: none;
-      }
+    @include md-width {
+      display: none;
     }
   }
 }
