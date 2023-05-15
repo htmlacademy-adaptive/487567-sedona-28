@@ -6,4 +6,14 @@
   text-transform: uppercase;
   line-height: inherit;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-hover;
+  }
+
+  &:active {
+    background-color: $primary-down;
+    color: rgba(255, 255, 255, 0.3)
+  }
 }

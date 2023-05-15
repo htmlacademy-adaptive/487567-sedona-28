@@ -11,24 +11,24 @@
   color: $light-clr;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/hero/intro-triangle.svg"), url("../../img/hero/back-mobile2x.jpg");
+    background-image: url("../img/hero/intro-triangle.svg"), url("../img/hero/back-mobile2x.jpg");
   }
 
   @include md-width {
     padding: 57px 30px 60px;
-    background-image: url("../../img/hero/intro-triangle.svg"), url("../../img/hero/back-tablet.jpg");
+    background-image: url("../img/hero/intro-triangle.svg"), url("../img/hero/back-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/hero/intro-triangle.svg"), url("../../img/hero/back-tablet2x.jpg");
+      background-image: url("../img/hero/intro-triangle.svg"), url("../img/hero/back-tablet2x.jpg");
     }
   }
 
   @include lg-width {
     background-size: contain, cover;
-    background-image: url("../../img/hero/intro-triangle.svg"), url("../../img/hero/back-desktop.jpg");
+    background-image: url("../img/hero/intro-triangle.svg"), url("../img/hero/back-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/hero/intro-triangle.svg"), url("../../img/hero/back-desktop2x.jpg");
+      background-image: url("../img/hero/intro-triangle.svg"), url("../img/hero/back-desktop2x.jpg");
     }
   }
 

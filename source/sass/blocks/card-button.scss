@@ -8,9 +8,17 @@
     color: $light-clr;
   }
 
+  &:hover {
+    &::before {
+      mask-image: url("../img/card/like-icon.svg");
+      background-color: $primary-clr;
+      opacity: 1;
+    }
+  }
+
   &::before {
     content: "";
-    mask-image: url("../../img/card/like-icon.svg");
+    mask-image: url("../img/card/like-icon.svg");
     background-color: $dark-clr;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +31,7 @@
     height: 21px;
 
     @include lg-width {
-      mask-image: url("../../img/card/like-icon.svg");
+      mask-image: url("../img/card/like-icon.svg");
       background-color: $light-clr;
       opacity: 1;
     }

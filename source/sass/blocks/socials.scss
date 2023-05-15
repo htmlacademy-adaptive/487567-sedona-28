@@ -6,24 +6,18 @@
   width: 48px;
   height: 48px;
   background-color: $primary-clr;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
 
   &:not(:last-child) {
     margin-right: 6px;
   }
 
-  &--vk {
-    background-image: url("../../img/footer/vk.svg");
+  &:hover,
+  &:focus-within {
+    background-color: $primary-hover;
   }
 
-  &--telegram {
-    background-image: url("../../img/footer/telegram.svg");
-  }
-
-  &--youtube {
-    background-image: url("../../img/footer/youtube.svg");
+  &:active {
+    background-color: $primary-down;
   }
 }
 
@@ -32,4 +26,23 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+
+  &--vk {
+    background-image: url("../img/footer/vk.svg");
+  }
+
+  &--telegram {
+    background-image: url("../img/footer/telegram.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/footer/youtube.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

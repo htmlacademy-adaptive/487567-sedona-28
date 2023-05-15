@@ -34,7 +34,7 @@
   }
 
   &--housing {
-    background-image: url("../../img/advantages/home.svg");
+    background-image: url("../img/advantages/home.svg");
 
     @include md-width {
       background-size: 77px 72px;
@@ -42,7 +42,7 @@
   }
 
   &--food {
-    background-image: url("../../img/advantages/burger.svg");
+    background-image: url("../img/advantages/burger.svg");
 
     @include md-width {
       background-size: 80px 68px;
@@ -51,7 +51,7 @@
   }
 
   &--souvenirs {
-    background-image: url("../../img/advantages/gift.svg");
+    background-image: url("../img/advantages/gift.svg");
 
     @include md-width {
       background-size: 67px 75px;
