@@ -6,6 +6,7 @@
   width: 48px;
   height: 48px;
   background-color: $primary-clr;
+  transition: $transition;
 
   &:not(:last-child) {
     margin-right: 6px;
@@ -14,10 +15,12 @@
   &:hover,
   &:focus-within {
     background-color: $primary-hover;
+    transition: $transition;
   }
 
   &:active {
     background-color: $primary-down;
+    transition: $transition;
   }
 }
 
@@ -29,6 +32,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 24px 24px;
+  transition: $transition;
 
   &--vk {
     background-image: url("../img/footer/vk.svg");
@@ -44,5 +48,6 @@
 
   &:active {
     opacity: 0.3;
+    transition: $transition;
   }
 }

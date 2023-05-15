@@ -2,17 +2,29 @@
   position: relative;
   background-color: inherit;
   padding-left: 37px;
+  transition: $transition;
 
   @include lg-width {
     background-color: initial;
     color: $light-clr;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     &::before {
       mask-image: url("../img/card/like-icon.svg");
-      background-color: $primary-clr;
+      background-color: $primary-hover;
       opacity: 1;
+      transition: $transition;
+    }
+  }
+
+  &:active {
+    &::before {
+      mask-image: url("../img/card/like-icon.svg");
+      background-color: $primary-down;
+      opacity: 0.3;
+      transition: $transition;
     }
   }
 

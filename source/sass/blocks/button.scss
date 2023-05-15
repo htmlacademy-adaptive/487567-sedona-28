@@ -6,14 +6,17 @@
   text-transform: uppercase;
   line-height: inherit;
   border: none;
+  transition: $transition;
 
   &:hover,
   &:focus {
     background-color: $primary-hover;
+    transition: $transition;
   }
 
   &:active {
     background-color: $primary-down;
-    color: rgba(255, 255, 255, 0.3)
+    color: rgba(255, 255, 255, 0.3);
+    transition: $transition;
   }
 }
