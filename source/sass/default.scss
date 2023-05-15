@@ -45,6 +45,7 @@ textarea,
 fieldset {
   appearance: none;
   border: none;
+  outline: none;
   margin: 0;
 }
 
@@ -73,6 +74,7 @@ a:focus,
 a:active,
 a:hover {
   text-decoration: none;
+  outline: none;
 }
 
 img {

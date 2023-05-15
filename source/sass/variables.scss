@@ -1,5 +1,7 @@
 /*  Colors scheme  */
 $primary-clr: #81b3d2;
+$primary-hover: #669ec0;
+$primary-down: #5496bd;
 $secondary-clr: #eeeeee;
 $light-clr: #ffffff;
 $dark-clr: #000000;
@@ -7,6 +9,10 @@ $text-clr: #333333;
 $text-current: #766357;
 $decor-clr: #d6d6d6;
 $form-bg-clr: #f2f2f2;
+$form-bg-hover: #e5e5e5;
+$form-bg-down: #d5d5d5;
+
+$transition: all 0.3s ease-out;
 
 $fontfamily: "PT Sans", sans-serif;
 $minwidth: 320px;

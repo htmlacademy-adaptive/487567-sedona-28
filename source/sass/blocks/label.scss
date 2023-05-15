@@ -20,13 +20,13 @@
 
   &--phone {
     &::after {
-      background-image: url("../../img/form/phone.svg");
+      background-image: url("../img/form/phone.svg");
     }
   }
 
   &--email {
     &::after {
-      background-image: url("../../img/form/email.svg");
+      background-image: url("../img/form/email.svg");
     }
   }
 }
