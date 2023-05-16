@@ -1,6 +1,11 @@
 .nav {
   height: 56px;
   background-color: $light-clr;
+
+  @include md-width {
+    min-height: 56px;
+    height: auto;
+  }
 }
 
 .nav__list {

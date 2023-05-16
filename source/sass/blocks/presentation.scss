@@ -34,11 +34,11 @@
   height: auto;
 }
 
-.presentation__button-play {
+.presentation__link-play {
   position: relative;
-  width: 100%;
+  display: block;
+  height: 100%;
   max-width: 1200px;
-  border: none;
   padding: 0;
 
   &::after {
