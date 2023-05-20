@@ -20,8 +20,8 @@ body {
 body {
   font-size: 100%;
   line-height: 150%;
-  background: #ffffff;
   font-family: $fontfamily;
+  background-color: #dbdbdb;
 }
 
 input,
@@ -74,7 +74,6 @@ a:focus,
 a:active,
 a:hover {
   text-decoration: none;
-  outline: none;
 }
 
 img {
@@ -94,11 +93,16 @@ h6 {
   margin: 0;
 }
 
+:focus {
+  outline: 0;
+}
+
 //</ОБЩИЕ КЛАССЫ>===============================================================================================
 .landing-wrapper {
-  max-width: 1920px;
+  max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
+  background-color: #ffffff;
 }
 
 .container {

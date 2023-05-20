@@ -1,0 +1,93 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  display: none;
+
+  &--success,
+  &--error {
+    display: block;
+  }
+}
+
+.modal__window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $light-clr;
+  width: 320px;
+  height: auto;
+
+  @include md-width {
+    width: 640px;
+  }
+
+  &--error {
+    padding: 45px 40px 35px;
+
+    @include md-width {
+      width: 400px;
+      padding: 55px 60px 50px;
+    }
+  }
+
+  &--success {
+    padding-top: 50px;
+  }
+}
+
+.modal__content {
+  max-width: 230px;
+  margin: 0 auto;
+  text-align: center;
+
+  @include md-width {
+    max-width: 280px;
+  }
+
+  &--success {
+    @include md-width {
+      max-width: 420px;
+    }
+  }
+}
+
+.modal__title,
+.modal__text {
+  margin-bottom: 20px;
+
+  @include md-width {
+    margin-bottom: 30px;
+  }
+}
+
+.modal__button {
+  display: block;
+  margin: 0 auto;
+  min-width: 180px;
+  padding: 15px 20px;
+
+  &--success {
+    width: 100%;
+  }
+
+  @include md-width {
+    min-width: 272px;
+    font-size: 21px;
+  }
+}
+
+.modal__button-wrapper {
+  background-color: $form-bg-clr;
+  padding: 20px;
+  margin-top: 40px;
+
+  @include md-width {
+    padding: 45px 90px;
+  }
+}

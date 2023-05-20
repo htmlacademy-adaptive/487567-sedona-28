@@ -49,9 +49,7 @@
 }
 
 .form-group__input {
-  width: 100%;
-
-  &--radio[type="radio"]:checked ~ .form-group__label {
+  &[type="radio"]:checked ~ .form-group__label {
     &::after {
       content: "";
       position: absolute;
@@ -65,7 +63,7 @@
     }
   }
 
-  &--checkbox[type="checkbox"]:checked ~ .form-group__label {
+  &[type="checkbox"]:checked ~ .form-group__label {
     &::after {
       content: "";
       position: absolute;
@@ -132,8 +130,7 @@
 
 .form-group__label--radio,
 .form-group__label--checkbox {
-  &:hover,
-  &:focus {
+  &:hover {
     &::before {
       background-color: $form-bg-hover;
       transition: $transition;
@@ -145,6 +142,20 @@
       background-color: $form-bg-down;
       transition: $transition;
     }
+  }
+}
+
+.form-group__input:focus ~ .form-group__label--radio {
+  &::before {
+    background-color: $form-bg-hover;
+    transition: $transition;
+  }
+}
+
+.form-group__input:focus ~ .form-group__label--checkbox {
+  &::before {
+    background-color: $form-bg-hover;
+    transition: $transition;
   }
 }
 

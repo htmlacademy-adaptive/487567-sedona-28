@@ -32,9 +32,23 @@
 }
 
 .footer__copyright {
+  display: flex;
+  align-items: center;
   color: $dark-clr;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $primary-hover;
+    transition: $transition;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+    transition: $transition;
+  }
 }
 
-.footer__img {
+.footer__logo {
   margin-left: 12px;
 }
