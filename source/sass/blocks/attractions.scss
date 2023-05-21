@@ -35,15 +35,16 @@
 
   &--home {
     position: relative;
+
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
       background-image: url("../img/sprite.svg#home");
       background-repeat: no-repeat;
       height: 43px;
-width: 100%;
+      width: 100%;
     }
 
 
