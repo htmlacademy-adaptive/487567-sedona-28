@@ -147,7 +147,6 @@ export const start = gulp.series(
     html,
     styles,
     scripts,
-    optimiseImages,
     createWebp,
     svg,
     sprite,

@@ -33,8 +33,19 @@
     }
   }
 
-  &--housing {
-    background-image: url("../img/advantages/home.svg");
+  &--home {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url("../img/sprite.svg#home");
+      background-repeat: no-repeat;
+      height: 43px;
+width: 100%;
+    }
+
 
     @include md-width {
       background-size: 77px 72px;
@@ -42,7 +53,7 @@
   }
 
   &--food {
-    background-image: url("../img/advantages/burger.svg");
+    background-image: url("../img/sprite.svg#burger");
 
     @include md-width {
       background-size: 80px 68px;
