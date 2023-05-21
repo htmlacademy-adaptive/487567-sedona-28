@@ -1,6 +1,6 @@
 .gallery-card {
   position: relative;
-  padding-top: 25px;
+  padding: 25px 20px 0;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 
@@ -50,14 +50,14 @@
 }
 
 .gallery-card__content {
-  padding: 15px 0 25px;
+  padding: 14px 0 25px;
 
   @include md-width {
     background-color: $form-bg-clr;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 22px 20px 15px;
+    padding: 22px 15px 17px 20px;
   }
 
   @include lg-width {
@@ -66,6 +66,7 @@
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.3);
+    padding: 22px 15px 18px 25px;
   }
 }
 
@@ -102,7 +103,7 @@
 
 .gallery-card__button {
   display: block;
-  margin-top: 10px;
+  margin-top: 13px;
   border: none;
   min-height: 25px;
 

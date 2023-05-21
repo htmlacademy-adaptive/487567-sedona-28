@@ -26,24 +26,24 @@
 
 .socials__link {
   display: block;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
-  transition: $transition;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  mask-size: 24px 24px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  position: relative;
 
   &--vk {
-    background-image: url("../img/footer/vk.svg");
+    mask-image: url("../img/sprite.svg#vk");
   }
 
   &--telegram {
-    background-image: url("../img/footer/telegram.svg");
+    mask-image: url("../img/sprite.svg#telegram");
   }
 
   &--youtube {
-    background-image: url("../img/footer/youtube.svg");
+    mask-image: url("../img/sprite.svg#youtube");
   }
 
   &:active {

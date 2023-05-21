@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <title>HTML Academy: Седона</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
         <div class="landing-wrapper">
@@ -41,11 +41,11 @@
                     <img class="hero__img hero__img--alt" src="img/hero/sedona.svg" alt="mountains of Sedona" width="230" height="40">
                 </section>
 
-                <section class="headline">
-                    <h2 class="headline__title title title--large">
+                <section class="headline headline--form">
+                    <h2 class="headline__title headline__title--form title title--large">
                         Оставьте свой отзыв
                     </h2>
-                    <p class="headline__text text">
+                    <p class="headline__text headline__text--alt text">
                         Помогите нашим отелям стать лучше! оставьте отзыв о них,
                         <span class="text-wrap">
                             а также о посещенных вами достопримечательностях
@@ -90,9 +90,9 @@
                             </ul>
                         </fieldset>
 
-                        <fieldset class="form__group form-group form-group--row">
+                        <fieldset class="form__group form-group form-group--radio">
                             <legend class="form-group__legend form-group__legend--decor title">Ваше общее впечатление:</legend>
-                            <ul class="form-group__list form-group__list--row">
+                            <ul class="form-group__list form-group__list--radio">
                                 <li class="form-group__item">
                                     <input class="form-group__input visually-hidden" type="radio" id="positive" name="impression" value="positive" checked>
                                     <label class="form-group__label form-group__label--radio" for="positive">Скорее положительное</label>
@@ -108,9 +108,9 @@
                             </ul>
                         </fieldset>
 
-                        <fieldset class="form__group form-group form-group--row">
+                        <fieldset class="form__group form-group form-group--checkbox">
                             <legend class="form-group__legend form-group__legend--decor title">Посещенные <span class="text-wrap">достопримечательности:</span></legend>
-                            <ul class="form-group__list form-group__list--row">
+                            <ul class="form-group__list form-group__list--checkbox">
                                 <li class="form-group__item">
                                     <input class="form-group__input visually-hidden" type="checkbox" id="devils-bridge" name="devils-bridge" checked>
                                     <label class="form-group__label form-group__label--checkbox" for="devils-bridge">Мост Дьявола</label>
@@ -146,22 +146,22 @@
                 <a href="#" class="footer__link title">#visitSEDONA</a>
                 <ul class="footer__socials socials">
                     <li class="socials__item socials__item--vk">
-                        <a class="socials__link socials__link--vk" href="#">
+                        <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank">
                             <span class="visually-hidden">ВКонтакте</span>
                         </a>
                     </li>
                     <li class="socials__item socials__item--telegram">
-                        <a class="socials__link socials__link--telegram" href="#">
+                        <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" target="_blank">
                             <span class="visually-hidden">Телеграм</span>
                         </a>
                     </li>
                     <li class="socials__item socials__item--youtube">
-                        <a class="socials__link socials__link--youtube" href="#">
+                        <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                             <span class="visually-hidden">Youtube</span>
                         </a>
                     </li>
                 </ul>
-                <a class="footer__copyright text" href="https://htmlacademy.ru">
+                <a class="footer__copyright text" href="https://htmlacademy.ru" target="_blank">
                     Разработано
                     <span class="visually-hidden">в HTML ACADEMY</span>
                     <svg class="footer__logo" xmlns="http://www.w3.org/2000/svg" fill="none" width="29" height="35" viewBox="0 0 29 35">
@@ -172,7 +172,7 @@
         </div>
 
         <!-- Модальное окно с сообщением об ошибке -->
-        <div class="modal" id="modal-error"> <!-- Чтобы открыть модальное окно - добавить класс "modal--mistake-active"-->
+        <div class="modal" id="modal-error"><!-- Чтобы открыть модальное окно - добавить класс "error" -->
           <div class="modal__window modal__window--error">
             <div class="modal__content">
               <h2 class="modal__title title title--large">Что-то пошло <span class="text-wrap">не так!</span></h2>
@@ -182,7 +182,7 @@
           </div>
         </div>
         <!-- Модальное окно -->
-        <div class="modal" id="modal"> <!-- Чтобы открыть модальное окно - добавить класс "modal--message-active" -->
+        <div class="modal" id="modal"> <!-- Чтобы открыть модальное окно - добавить класс "success" -->
           <div class="modal__window modal__window--success">
             <div class="modal__content modal__content--success">
               <h2 class="modal__title title title--large">Ваш отзыв отправлен!</h2>
@@ -194,6 +194,6 @@
           </div>
         </div>
 
-        <script src="js/main.js"></script>
+        <script src="js/main.min.js"></script>
     </body>
 </html>

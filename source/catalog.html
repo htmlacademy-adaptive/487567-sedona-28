@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <title>HTML Academy: Седона</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
         <div class="landing-wrapper">
@@ -41,8 +41,8 @@
                     <img class="hero__img hero__img--alt" src="img/hero/sedona.svg" alt="mountains of Sedona" width="230" height="40">
                 </section>
 
-                <section class="headline">
-                    <h2 class="headline__title title title--large">
+                <section class="headline headline--alt">
+                    <h2 class="headline__title headline__title--alt title title--large">
                         Фото и видео
                     </h2>
                     <p class="headline__text text">
@@ -56,9 +56,12 @@
                     <ul class="gallery__list">
                         <li class="gallery__item gallery-card gallery-card--wide">
                             <picture class="gallery-card__picture">
-                                <source media="(min-width: 1200px)" srcset="img/gallery/photo-1-desktop.jpg 1x, img/gallery/photo-1-desktop2x.jpg 2x">
-                                <source media="(min-width: 768px)" srcset="img/gallery/photo-1-tablet.jpg 1x, img/gallery/photo-1-tablet2x.jpg 2x">
-                                <img class="gallery-card__img" src="img/gallery/photo-1-mobile.jpg" srcset="img/gallery/photo-1-mobile2x.jpg 2x" width="280" height="280" alt="road on sunset">
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="img/gallery/photo-1-desktop.webp 1x, img/gallery/photo-1-desktop2x.webp 2x" width="1200" height="400">
+                                <source media="(min-width: 1200px)" srcset="img/gallery/photo-1-desktop.jpg 1x, img/gallery/photo-1-desktop2x.jpg 2x" width="1200" height="400">
+                                <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/photo-1-tablet.webp 1x, img/gallery/photo-1-tablet2x.webp 2x" width="648" height="400">
+                                <source media="(min-width: 768px)" srcset="img/gallery/photo-1-tablet.jpg 1x, img/gallery/photo-1-tablet2x.jpg 2x" width="648" height="400">
+                                <source type="image/webp" srcset="img/gallery/photo-1-mobile.webp 1x, img/gallery/photo-1-mobile2x.webp 2x" width="280" height="280">
+                                <img class="gallery-card__img" src="img/gallery/photo-1-mobile.jpg" srcset="img/gallery/photo-1-mobile2x.jpg 2x" width="280" height="280" alt="дорога на закате">
                             </picture>
                             <div class="gallery-card__content">
                                 <div class="gallery-card__description">
@@ -75,8 +78,11 @@
                         </li>
                         <li class="gallery__item gallery-card">
                             <picture class="gallery-card__picture">
-                                <source media="(min-width: 1200px)" srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop2x.jpg 2x">
-                                <source media="(min-width: 768px)" srcset="img/gallery/photo-2-tablet.jpg 1x, img/gallery/photo-2-tablet2x.jpg 2x">
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="img/gallery/photo-2-desktop.webp 1x, img/gallery/photo-2-desktop2x.webp 2x" width="400" height="267">
+                                <source media="(min-width: 1200px)" srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop2x.jpg 2x" width="400" height="267">
+                                <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/photo-2-tablet.webp 1x, img/gallery/photo-2-tablet2x.webp 2x" width="324" height="267">
+                                <source media="(min-width: 768px)" srcset="img/gallery/photo-2-tablet.jpg 1x, img/gallery/photo-2-tablet2x.jpg 2x" width="324" height="267">
+                                <source type="image/webp" srcset="img/gallery/photo-2-mobile.webp 1x, img/gallery/photo-2-mobile2x.webp 2x" width="280" height="280">
                                 <img class="gallery-card__img" src="img/gallery/photo-2-mobile.jpg" srcset="img/gallery/photo-2-mobile2x.jpg 2x" width="280" height="280" alt="Местная растительность">
                             </picture>
                             <div class="gallery-card__content">
@@ -94,9 +100,12 @@
                         </li>
                         <li class="gallery__item gallery-card">
                             <picture class="gallery-card__picture">
-                                <source media="(min-width: 1200px)" srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop2x.jpg 2x">
-                                <source media="(min-width: 768px)" srcset="img/gallery/photo-3-tablet.jpg 1x, img/gallery/photo-3-tablet2x.jpg 2x">
-                                <img class="gallery-card__img" src="img/gallery/photo-3-mobile.jpg" srcset="img/gallery/photo-3-mobile2x.jpg 2x" width="280" height="280" alt="Дорога">
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="img/gallery/photo-3-desktop.webp 1x, img/gallery/photo-3-desktop2x.webp 2x" width="400" height="267">
+                                <source media="(min-width: 1200px)" srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop2x.jpg 2x" width="400" height="267">
+                                <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/photo-3-tablet.webp 1x, img/gallery/photo-3-tablet2x.webp 2x" width="324" height="267">
+                                <source media="(min-width: 768px)" srcset="img/gallery/photo-3-tablet.jpg 1x, img/gallery/photo-3-tablet2x.jpg 2x" width="324" height="267">
+                                <source type="image/webp" srcset="img/gallery/photo-3-mobile.webp 1x, img/gallery/photo-3-mobile2x.webp 2x" width="280" height="280">
+                                <img class="gallery-card__img" src="img/gallery/photo-3-mobile.jpg" srcset="img/gallery/photo-3-mobile2x.jpg 2x" width="280" height="280" alt="Дорога. Серпантин в густом лесу">
                             </picture>
                             <div class="gallery-card__content">
                                 <div class="gallery-card__description">
@@ -113,9 +122,12 @@
                         </li>
                         <li class="gallery__card gallery-card">
                             <picture class="gallery-card__picture">
-                                <source media="(min-width: 1200px)" srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-desktop2x.jpg 2x">
-                                <source media="(min-width: 768px)" srcset="img/gallery/photo-4-tablet.jpg 1x, img/gallery/photo-4-tablet2x.jpg 2x">
-                                <img class="gallery-card__img" src="img/gallery/photo-4.jpg" srcset="img/gallery/photo-4-2x.jpg 2x" width="280" height="280" alt="просторы">
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="img/gallery/photo-4-desktop.webp 1x, img/gallery/photo-4-desktop2x.webp 2x" width="400" height="267">
+                                <source media="(min-width: 1200px)" srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-desktop2x.jpg 2x" width="400" height="267">
+                                <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/photo-4-tablet.webp 1x, img/gallery/photo-4-tablet2x.webp 2x" width="324" height="267">
+                                <source media="(min-width: 768px)" srcset="img/gallery/photo-4-tablet.jpg 1x, img/gallery/photo-4-tablet2x.jpg 2x" width="324" height="267">
+                                <source type="image/webp" srcset="img/gallery/photo-4.webp 1x, img/gallery/photo-4-2x.webp 2x" width="280" height="280">
+                                <img class="gallery-card__img" src="img/gallery/photo-4.jpg" srcset="img/gallery/photo-4-2x.jpg 2x" width="280" height="280" alt="Вид на красные скалы">
                             </picture>
                             <div class="gallery-card__content">
                                 <div class="gallery-card__description">
@@ -132,7 +144,7 @@
                         </li>
                     </ul>
                     <div class="gallery__presentation presentation">
-                        <p class="presentation__title title">
+                        <p class="presentation__title title title--large">
                             Все еще сомневаетесь?
                         </p>
                         <p class="presentation__chit text">
@@ -141,9 +153,12 @@
                         <a class="presentation__link-play" href="https://www.youtube.com/watch?v=gA6pxmdMiOQ" target="blank">
                             <span class="visually-hidden">Воспроизвести Видео</span>
                             <picture class="presentation__picture">
-                                <source media="(min-width: 1200px)" srcset="img/gallery/video-desktop.jpg 1x, img/gallery/video-desktop2x.jpg 2x">
-                                <source media="(min-width: 768px)" srcset="img/gallery/video-tablet.jpg 1x, img/gallery/video-tablet2x.jpg 2x">
-                                <img class="presentation__video-img" src="img/gallery/video-mobile.jpg" srcset="img/gallery/video-mobile2x.jpg 2x" width="280" height="177" alt="video">
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="img/gallery/video-desktop.webp 1x, img/gallery/video-desktop2x.webp 2x" width="800" height="500">
+                                <source media="(min-width: 1200px)" srcset="img/gallery/video-desktop.jpg 1x, img/gallery/video-desktop2x.jpg 2x" width="800" height="500">
+                                <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/video-tablet.webp 1x, img/gallery/video-tablet2x.webp 2x" width="648" height="500">
+                                <source media="(min-width: 768px)" srcset="img/gallery/video-tablet.jpg 1x, img/gallery/video-tablet2x.jpg 2x" width="648" height="500">
+                                <source type="image/webp" srcset="img/gallery/video-mobile.webp 1x, img/gallery/video-mobile2x.webp 2x" width="280" height="177">
+                                <img class="presentation__video-img" src="img/gallery/video-mobile.jpg" srcset="img/gallery/video-mobile2x.jpg 2x" width="280" height="177" alt="Стоп-кадр из видео. Дорога, горы">
                             </picture>
                         </a>
                     </div>
@@ -151,25 +166,25 @@
             </main>
 
             <footer class="footer">
-                <a href="/" class="footer__link title">#visitSEDONA</a>
+                <a href="#" class="footer__link title">#visitSEDONA</a>
                 <ul class="footer__socials socials">
                     <li class="socials__item socials__item--vk">
-                        <a class="socials__link socials__link--vk" href="#">
+                        <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank">
                             <span class="visually-hidden">ВКонтакте</span>
                         </a>
                     </li>
                     <li class="socials__item socials__item--telegram">
-                        <a class="socials__link socials__link--telegram" href="#">
+                        <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" target="_blank">
                             <span class="visually-hidden">Телеграм</span>
                         </a>
                     </li>
                     <li class="socials__item socials__item--youtube">
-                        <a class="socials__link socials__link--youtube" href="#">
+                        <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                             <span class="visually-hidden">Youtube</span>
                         </a>
                     </li>
                 </ul>
-                <a class="footer__copyright text" href="https://htmlacademy.ru">
+                <a class="footer__copyright text" href="https://htmlacademy.ru" target="_blank">
                     Разработано
                     <span class="visually-hidden">в HTML ACADEMY</span>
                     <svg class="footer__logo" xmlns="http://www.w3.org/2000/svg" fill="none" width="29" height="35" viewBox="0 0 29 35">
@@ -179,6 +194,6 @@
             </footer>
         </div>
 
-        <script src="js/main.js"></script>
+        <script src="js/main.min.js"></script>
     </body>
 </html>

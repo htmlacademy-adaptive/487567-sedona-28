@@ -5,17 +5,26 @@
 
 
   @include md-width {
-    padding-top: 60px;
+    padding-top: 58px;
     padding-bottom: 55px;
+  }
+
+  @include lg-width {
+    padding-bottom: 67px;
   }
 }
 
 .hotels__title {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   font-size: 21px;
 
   @include md-width {
     font-size: 30px;
+    margin-bottom: 23px;
+  }
+
+  @include lg-width {
+    margin-bottom: 25px;
   }
 }
 
@@ -28,4 +37,9 @@
   width: 100%;
   max-width: 458px;
   margin-top: 32px;
+  font-size: 21px;
+
+  @include md-width {
+    margin-top: 44px;
+  }
 }

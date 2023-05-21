@@ -4,19 +4,23 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  padding-top: 17px;
+  padding-top: 15px;
 
   @include md-width {
-    padding: 60px 0 40px;
+    padding: 48px 0 45px;
   }
 
   @include lg-width {
-    padding: 60px 200px 80px;
+    padding: 58px 200px 90px;
   }
 }
 
 .presentation__title {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
+
+  @include lg-width {
+    margin-bottom: 23px;
+  }
 }
 
 .presentation__chit {
@@ -25,7 +29,7 @@
 
   @include md-width {
     max-width: 455px;
-    margin-bottom: 70px;
+    margin-bottom: 87px;
   }
 }
 
