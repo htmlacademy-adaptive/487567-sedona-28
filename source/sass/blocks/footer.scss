@@ -8,13 +8,19 @@
   @include md-width {
     justify-content: space-between;
     flex-direction: row;
-    padding: 36px;
+    padding: 32px 59px;
+  }
+
+  @include lg-width {
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 30px 119px;
   }
 }
 
 .footer__link {
   font-size: 21px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   @include md-width {
     margin-bottom: 0;
@@ -24,7 +30,7 @@
 .footer__socials {
   @include reset-list;
 
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   @include md-width {
     margin-bottom: 0;

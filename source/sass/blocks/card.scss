@@ -1,12 +1,16 @@
 .card {
   background-color: $primary-clr;
-  padding: 37px 18px;
+  padding: 38px 18px 37px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   color: $light-clr;
+
+  @include md-width {
+    padding: 55px 33px 30px;
+  }
 
   &--first {
     @include md-width {
@@ -18,6 +22,10 @@
     @include md-width {
       grid-column: 3/4;
     }
+
+    @include lg-width {
+      padding: 30px 83px;
+    }
   }
 
   &--decor {
@@ -25,11 +33,11 @@
     background-size: contain;
     background-position: center top -1px;
     background-repeat: no-repeat;
-    padding-top: 20%;
+    padding-top: 22%;
 
     @include md-width {
       background-image: none;
-      padding: 52px 33px 32px;
+      padding: 50px 33px 30px;
     }
 
     @include lg-width {
@@ -38,17 +46,17 @@
   }
 
   &--alt {
-    padding: 24px 18px;
+    padding: 25px 18px;
     background-color: $secondary-clr;
     color: $text-clr;
 
     @include md-width {
       background-image: none;
-      padding: 52px 3px 32px;
+      padding: 42px 3px 40px;
     }
 
     @include lg-width {
-      padding: 50px 3px;
+      padding: 52px 20px;
     }
 
     & .card__title {
@@ -85,7 +93,7 @@
   line-height: 144%;
   color: $light-clr;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   @include md-width {
     font-size: 21px;
@@ -103,6 +111,18 @@
   max-width: 280px;
 }
 
+.card__text {
+  &--alt {
+    @include lg-width {
+      max-width: 300px;
+    }
+  }
+}
+
 .card__number {
   margin-bottom: 15px;
+
+  @include md-width {
+    margin-bottom: 23px;
+  }
 }

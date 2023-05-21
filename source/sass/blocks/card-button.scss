@@ -3,6 +3,11 @@
   background-color: inherit;
   padding-left: 37px;
   transition: $transition;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  @include md-width {
+    padding-left: 32px;
+  }
 
   @include lg-width {
     background-color: initial;
