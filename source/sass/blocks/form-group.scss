@@ -61,13 +61,17 @@
     @include md-width {
       width: 100%;
       display: inline-grid;
-      grid-template-columns: repeat(2, 288px);
+      grid-template-columns: repeat(2, 280px);
+      gap: 0 14px;
       justify-content: center;
     }
 
     @include lg-width {
-      display: flex;
+      width: auto;
+      grid-template-columns: repeat(3, auto);
       margin-top: 14px;
+      gap: 0 64px;
+      justify-content: normal;
     }
   }
 
@@ -81,22 +85,12 @@
     }
 
     @include lg-width {
-      display: flex;
+      width: auto;
+      gap: 0 64px;
+      grid-template-columns: repeat(4, auto);
       margin-top: 27px;
       margin-left: 0;
     }
-  }
-}
-
-.form-group__list--radio > .form-group__item:not(:last-child) {
-  @include lg-width {
-    margin-right: 60px;
-  }
-}
-
-.form-group__list--checkbox > .form-group__item:not(:last-child) {
-  @include lg-width {
-    margin-right: 65px;
   }
 }
 
