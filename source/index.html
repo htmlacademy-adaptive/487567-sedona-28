@@ -7,14 +7,19 @@
         <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
         <link rel="manifest" href="manifest.webmanifest">
+        <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="css/style.min.css" as="style">
+        <link rel="preload" href="js/main.min.js" as="script">
+        <link rel="preload" href="img/hero/back-desktop2x.jpg" as="image">
         <title>HTML Academy: Седона</title>
         <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
         <div class="landing-wrapper">
             <header class="header">
-                <a class="header__logo" href="#">
-                    <img src="img/header/logo.svg" alt="logo Sedona" width="185" height="96">
+                <a class="header__logo" href="#" aria-label="логотип сайта Sedona">
+                    <img src="img/header/logo.svg" alt="логотип сайта Sedona" width="185" height="96">
                 </a>
                 <nav class="header__nav nav nav--nojs">
                     <ul class="nav__list" id="nav">
@@ -162,41 +167,45 @@
                     </button>
                 </section>
 
-                <section class="map">
-                    <h2 class="visually-hidden">Карта</h2>
+                <section class="map map--nojs">
+                    <h2 class="visually-hidden">Седона на Карте</h2>
                     <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d768337.1963619074!2d-112.24784432127925!3d34.86888452041005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m0!4m5!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!3m2!1d34.8697395!2d-111.7609896!5e0!3m2!1sru!2sru!4v1680448529986!5m2!1sru!2sru" height="350" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </section>
             </main>
 
             <footer class="footer">
-                <a href="#" class="footer__link title">#visitSEDONA</a>
+                <div class="footer__link-wrap">
+                    <a href="#" class="footer__link title" aria-label="Посетите Седону">#visitSEDONA</a>
+                </div>
                 <ul class="footer__socials socials">
                     <li class="socials__item socials__item--vk">
-                        <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank">
-                            <span class="visually-hidden">ВКонтакте</span>
+                        <a class="socials__link socials__link--vk" title="ссылка на ВКонтакте htmlacademy" href="https://vk.com/htmlacademy" target="_blank">
+                            <span class="visually-hidden">Ссылка на группу ВКонтакте htmlacademy</span>
                         </a>
                     </li>
                     <li class="socials__item socials__item--telegram">
-                        <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" target="_blank">
-                            <span class="visually-hidden">Телеграм</span>
+                        <a class="socials__link socials__link--telegram" title="ссылка на Телеграм htmlacademy" href="https://t.me/htmlacademy" target="_blank">
+                            <span class="visually-hidden">Ссылка на Телеграм htmlacademy</span>
                         </a>
                     </li>
                     <li class="socials__item socials__item--youtube">
-                        <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-                            <span class="visually-hidden">Youtube</span>
+                        <a class="socials__link socials__link--youtube" title="ссылка на Youtube htmlacademy" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+                            <span class="visually-hidden">Ссылка на Youtube канал htmlacademy</span>
                         </a>
                     </li>
                 </ul>
-                <a class="footer__copyright text" href="https://htmlacademy.ru" target="_blank">
-                    Разработано
-                    <span class="visually-hidden">в HTML ACADEMY</span>
-                    <svg class="footer__logo" xmlns="http://www.w3.org/2000/svg" fill="none" width="29" height="35" viewBox="0 0 29 35">
-                      <path fill="currentColor" d="M14.65.45h-.1l-13.5 1.4v24.7l13.5 8 13.4-8V1.85L14.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z"/>
-                    </svg>
-                </a>
+                <div class="footer__copyright-wrap">
+                    <a class="footer__copyright text" title="Разработано в HTML ACADEMY" href="https://htmlacademy.ru" target="_blank">
+                        Разработано
+                        <span class="visually-hidden">в HTML ACADEMY</span>
+                        <svg class="footer__logo" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" width="29" height="35" viewBox="0 0 29 35">
+                          <path fill="currentColor" d="M14.65.45h-.1l-13.5 1.4v24.7l13.5 8 13.4-8V1.85L14.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z"/>
+                        </svg>
+                    </a>
+                </div>
             </footer>
         </div>
 
-        <script src="js/main.js"></script>
+        <script src="js/main.min.js"></script>
     </body>
 </html>

@@ -6,25 +6,27 @@
   padding: 33px;
 
   @include md-width {
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 32px 59px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 20px;
+    padding: 38px 60px;
   }
 
   @include lg-width {
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 30px 119px;
+    padding: 36px 119px;
   }
 }
 
-.footer__link {
-  font-size: 21px;
+.footer__link-wrap {
   margin-bottom: 25px;
 
   @include md-width {
     margin-bottom: 0;
   }
+}
+
+.footer__link {
+  font-size: 21px;
 }
 
 .footer__socials {
@@ -33,7 +35,7 @@
   margin-bottom: 31px;
 
   @include md-width {
-    margin-bottom: 0;
+    margin: 0 auto;
   }
 }
 
@@ -42,6 +44,10 @@
   align-items: center;
   color: $dark-clr;
   transition: $transition;
+
+  @include md-width {
+    justify-content: flex-end;
+  }
 
   &:hover,
   &:focus {
