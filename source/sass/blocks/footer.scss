@@ -13,7 +13,6 @@
   }
 
   @include lg-width {
-    grid-template-columns: repeat(3, 1fr);
     padding: 36px 119px;
   }
 }
