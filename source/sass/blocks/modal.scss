@@ -32,12 +32,12 @@
 
     @include md-width {
       width: 400px;
-      padding: 55px 60px 50px;
+      padding: 50px 60px 50px;
     }
   }
 
   &--success {
-    padding-top: 50px;
+    padding-top: 46px;
   }
 }
 
@@ -57,12 +57,15 @@
   }
 }
 
-.modal__title,
+.modal__title {
+  margin-bottom: 25px;
+}
+
 .modal__text {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 
   @include md-width {
-    margin-bottom: 30px;
+    margin-bottom: 43px;
   }
 }
 
@@ -85,9 +88,10 @@
 .modal__button-wrapper {
   background-color: $form-bg-clr;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 45px;
 
   @include md-width {
     padding: 45px 90px;
+    margin-top: 52px;
   }
 }

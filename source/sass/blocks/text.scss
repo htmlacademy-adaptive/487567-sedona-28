@@ -1,0 +1,17 @@
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 150%;
+  margin: 0;
+
+  &--light {
+    color: $light-clr;
+  }
+}
+
+.text-wrap {
+  @include md-width {
+    display: block;
+  }
+}

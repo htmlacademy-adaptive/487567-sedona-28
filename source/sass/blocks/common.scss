@@ -1,0 +1,29 @@
+.landing-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  padding: 0 18px;
+
+  @include md-width {
+    padding: 0 30px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -4,7 +4,7 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  padding-top: 15px;
+  padding-top: 18px;
 
   @include md-width {
     padding: 48px 0 45px;
@@ -51,7 +51,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     content: "";
-    width: 54px;
+    width: 50px;
     height: 48px;
     background-image: url("../img/gallery/play-icon.svg");
     background-repeat: no-repeat;

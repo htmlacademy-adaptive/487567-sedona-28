@@ -42,7 +42,7 @@
                 </nav>
             </header>
 
-            <main class="landing-wrapper">
+            <main>
                 <section class="hero hero--alt">
                     <h1 class="visually-hidden">
                         Sedona
@@ -72,15 +72,15 @@
                             <ul class="form-group__list" role="none">
                                 <li class="form-group__item">
                                     <label class="form-group__label text" for="name">Имя*:</label>
-                                    <input class="form-group__input input" type="text" id="name" name="name" required>
+                                    <input class="form-group__input input" type="text" id="name" name="name" placeholder="Введите имя" required>
                                 </li>
                                 <li class="form-group__item">
                                     <label class="form-group__label text" for="second-name">Фамилия*:</label>
-                                    <input class="form-group__input input" type="text" id="second-name" name="second-name" required>
+                                    <input class="form-group__input input" type="text" id="second-name" name="second-name" placeholder="Введите фамилию" required>
                                 </li>
                                 <li class="form-group__item">
                                     <label class="form-group__label text" for="surname">Отчество:</label>
-                                    <input class="form-group__input input" type="text" id="surname" name="surname">
+                                    <input class="form-group__input input" type="text" id="surname" name="surname" placeholder="Введите отчество">
                                 </li>
                             </ul>
                         </fieldset>
@@ -185,7 +185,7 @@
         </div>
 
         <!-- Модальное окно с сообщением об ошибке -->
-        <div class="modal" id="modal-error"><!-- Чтобы открыть модальное окно - добавить класс "error" -->
+        <div class="modal" id="modal-error"><!-- Чтобы открыть модальное окно - добавить  модификатор "error" -->
           <div class="modal__window modal__window--error">
             <div class="modal__content">
               <h2 class="modal__title title title--large">Что-то пошло <span class="text-wrap">не так!</span></h2>
@@ -195,7 +195,7 @@
           </div>
         </div>
         <!-- Модальное окно -->
-        <div class="modal" id="modal"> <!-- Чтобы открыть модальное окно - добавить класс "success" -->
+        <div class="modal modal--success" id="modal"> <!-- Чтобы открыть модальное окно - добавить модификатор "success" -->
           <div class="modal__window modal__window--success">
             <div class="modal__content modal__content--success">
               <h2 class="modal__title title title--large">Ваш отзыв отправлен!</h2>
