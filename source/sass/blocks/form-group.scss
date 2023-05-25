@@ -125,7 +125,7 @@
       width: 22px;
       height: 16px;
       background-color: #333333;
-      mask-image: url("../../img/sprite.svg#tick");
+      mask-image: url("../img/sprite.svg#tick");
       mask-position: center;
       mask-repeat: no-repeat;
       mask-size: 22px 23px;
@@ -272,6 +272,7 @@
   transition: $transition;
 
   @include lg-width {
+    padding: 13px;
     display: block;
     max-width: 79.17%;
     margin: 0 auto;

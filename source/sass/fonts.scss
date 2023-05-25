@@ -16,3 +16,21 @@
     url("../fonts/ptsansbold.woff") format("woff");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/promptregular.woff2") format("woff2"),
+    url("../fonts/promptregular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Prompt";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/promptbold.woff2") format("woff2"),
+    url("../fonts/promptbold.woff") format("woff");
+  font-display: swap;
+}

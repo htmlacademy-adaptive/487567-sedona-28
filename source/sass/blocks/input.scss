@@ -20,8 +20,15 @@
     transition: $transition;
   }
 
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px $form-bg-hover inset;
+    background-color: $light-clr;
+  }
+
   &:active {
     background-color: $form-bg-down;
     transition: $transition;
+    box-shadow: none;
   }
 }

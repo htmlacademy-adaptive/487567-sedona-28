@@ -1,0 +1,23 @@
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 144%;
+  color: $dark-clr;
+  text-transform: uppercase;
+  margin: 0;
+
+  @include md-width {
+    font-size: 21px;
+    line-height: 124%;
+  }
+
+  &--large {
+    @include md-width {
+      font-size: 30px;
+    }
+  }
+
+  &--light {
+    color: $light-clr;
+  }
+}

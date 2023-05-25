@@ -1,0 +1,98 @@
+//<ОБНУЛЕНИЕ, СБРОС СТИЛЕЙ>===============================================================================================
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: $minwidth;
+  position: relative;
+  width: 100%;
+  color: $text-clr;
+  font-size: 14px;
+}
+
+body {
+  font-size: 100%;
+  line-height: 150%;
+  font-family: $fontfamily;
+  background-color: #f2f2f2;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 144%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+fieldset {
+  appearance: none;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  outline: transparent;
+}
+
+a {
+  cursor: pointer;
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+
+:focus {
+  outline: 0;
+}

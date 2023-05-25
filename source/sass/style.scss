@@ -1,7 +1,10 @@
 /*  default style  */
 @import "variables.scss";
 @import "mixins.scss";
-@import "default.scss";
+@import "nullstyle.scss";
+@import "blocks/common.scss";
+@import "blocks/title.scss";
+@import "blocks/text.scss";
 /*  header  */
 @import "blocks/header.scss";
 @import "blocks/nav.scss";

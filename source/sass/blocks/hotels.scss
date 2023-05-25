@@ -34,12 +34,16 @@
 }
 
 .hotels__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 458px;
-  margin-top: 32px;
+  margin: 32px auto 0;
   font-size: 21px;
+  font-weight: 700;
 
   @include md-width {
-    margin-top: 44px;
+    margin: 44px auto 0;
   }
 }
