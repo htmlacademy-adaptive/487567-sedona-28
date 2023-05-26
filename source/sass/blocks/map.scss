@@ -2,10 +2,6 @@
   background-color: #f2f1ed;
   margin-bottom: 7px;
 
-  @include md-width {
-    margin-bottom: 0;
-  }
-
   &--nojs {
     background-image: url("../img/map/map-mobile.jpg");
     background-size: cover;
